@@ -1,4 +1,4 @@
-# C-Final-Project
+# C-Sharp-Final-Project
 
 Final Exam – Due Tuesday, April 28, 2020
 
