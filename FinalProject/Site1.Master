@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FinalProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            position: relative;
+            width: 100%;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            left: 0px;
+            top: 0px;
+            height: 199px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" class="form-inline" runat="server">
+        <div class="container">
+            
+            <header>
+                <div class="form-group">
+                    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="col-sm-1" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" CssClass="col-sm-1" NavigateUrl="~/Admin.aspx">Admin</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" CssClass="col-sm-1" NavigateUrl="~/Schedule.aspx">Schedule</asp:HyperLink>
+                </div>
+                <div class="form-group">
+                    <asp:ImageButton ID="ImgBtnBanner" runat="server" CausesValidation="false" ImageUrl="~/Images/real-estate-banner-1.jpg" PostBackUrl="~/Home.aspx" CssClass="auto-style1" />
+                </div>
+            </header>
+            <main>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+        </div>
+    </form>
+</body>
+</html>
